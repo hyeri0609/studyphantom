@@ -3,8 +3,9 @@ var express = require('express');
 var favicon = require('serve-favicon');
 var compression = require('compression');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 var passport = require('passport') , LocalStrategy = require('passport-local').Strategy;
-
+var auth = require('./api/auth');
 var app = express();
 
 passport.use(new LocalStrategy(
@@ -48,10 +49,12 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(favicon(__dirname + '/public/icons/favicon.ico'));
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(compression());
+
+//app.use(auth);
+
 //app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-
+app.use(compression());
 var apirouter = express.Router();
 apirouter.get('/', function(req, res) {
     res.json({ message: 'Please contact developer for API docs.' });   
@@ -90,7 +93,8 @@ app.get('/', function(request, response) {
 });
 
 app.get('/uploadpic', (request, response) => response.render('pages/uploadpic'));
-app.get('/admin', (request, response) => response.render('pages/admin'));
+app.get('/admin101', (request, response) => response.render('pages/admin101'));
+app.get('/paragraph', (request, response) => response.render('pages/paragraph'));
 app.get('/baseline', (request, response) => response.render('pages/baseline'));
 app.get('/prologue', (request, response) => response.render('pages/prologue'));
 
