@@ -46,11 +46,198 @@
 
 				<!-- Main -->
 					<div id="main">
+						<script>
+							$('.nx').dblclick(function(){
+  $(this).replaceWith('<i class="fa fa-heart mx"></i>');
+  $('.mx').show().addClass('animated rubberBand');
+});
+
+$('.nz').click(function(){
+  alert('Not Working :p');
+});
+
+
+						</script>
+<style>
+
+
+.feeds {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  /* justify-content: center; */
+}
+
+.feed-image {
+  img {
+    max-width: 100%;
+  }
+}
+
+.feed {
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  width: 500px;
+  margin: .5em;
+  align-self: center;
+  flex-basis: 450px; 
+}
+
+.feed-header {
+  display: flex;
+  padding: 1em;
+  align-items: baseline;
+  
+  
+  .feed-author-name {
+    color: #444;
+    flex-grow: 1;
+    margin: .5em;
+    text-decoration: none;
+  }
+  
+  .feed-time {
+    color: #ddd;
+    text-decoration: none;
+  }
+}
+
+.feed-body {
+  padding: 1.5em;
+  white-space: normal;
+}
+
+.feed-footer {
+  display: flex;
+  border-top: 1px solid #eee;
+  margin: 0 1.5em 0 1.5em ;
+  padding: 1em 0 1em 0;
+  align-items: center;
+}
+
+.ny {
+  /* input box */
+  border: 0px;
+  outline: none;
+  font-family: 'Lato', san-serif;
+  margin: .5em;
+  flex-grow: 1;
+}
+.nx, .nz, .mx {
+  color: #ddd;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.nz {
+  align-self: flex-start;
+  margin-top: 0.2em;
+}
+.mx {
+  color: red;
+}
+.feed-author-img {
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px; 
+  }
+}
+</style>
+						<div class="feeds">
+
+
+
+
+  <div class="feed">
+    <div class="feed-header">
+      <a class="feed-author-img"><img src="https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/13248883_502754173266869_1416838301_a.jpg"/></a>
+      <a class="feed-author-name" href="http://blog.stackpie.com">Seun</a>
+      <a class="feed-time">2h</a>
+    </div>
+    <div class="feed-image">
+      <img src="http://vignette2.wikia.nocookie.net/enanimanga/images/6/6c/Soul_Eater.png/revision/latest?cb=20110928182429" />
+    </div>
+    <div class="feed-body">More creepy texts...</div>
+    <div class="feed-footer">
+      <i class="fa fa-heart-o nx"></i>
+      <input type="text" class="ny" placeholder="Add a comment..."/>
+      <i class="fa fa-sort-down nz"></i>
+    </div>
+  </div>
+</div>
+						
 						<div class="inner">
 							<header>
 								<h1>ท <a href="http://html5up.net">HTML5 UP</a>.</h1>
 								<p>1</p>
 							</header>
+<section class="gridflow">
+	
+<article>
+<span class="image">
+<img src="images/cloud-upload-512.png" alt="" />
+</span>
+<a href="generic.html">
+<h2>Upload</h2>
+<div class="content">
+<p>เพิ่มรูปภาพ</p>
+</div>
+</a>
+</article>
+<article>
+<span class="image">
+<img src="http://cdn1.sciencefiction.com/wp-content/uploads/2015/08/naruto.jpg" alt="" />
+</span>
+<a href="generic.html">
+<h2>Upload</h2>
+<div class="content">
+<p>เพิ่มรูปภาพ</p>
+</div>
+</a>
+</article>
+
+<article>
+
+<span class="image">
+<img src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e35/13108668_187117698355046_158026491_n.jpg?ig_cache_key=MTI1Nzk2ODc2MzIxMDE4MjYxNQ%3D%3D.2" alt="" />
+</span>
+<div class="name">ช่างกำไล รับซ่อมประปา</div>
+<div class="info">
+ซ่อมงานประปา งานท่อน้ำ ทุกชซ่อมงานประปา งานท่อน้ำ ทุกชซ่อมงานประปา งานท่อน้ำ ทุกชซ่อมงานประปา งานท่อน้ำ ทุกชซ่อมงานประปา งานท่อน้ำ ทุกชซ่อมงานประปา งานท่อน้ำ ทุกชนิด
+
+ซ่อมงานประป
+ซ่อมงานประป
+</div>
+</article>
+
+
+<article>
+<span class="image">
+<img src="http://vignette2.wikia.nocookie.net/enanimanga/images/6/6c/Soul_Eater.png/revision/latest?cb=20110928182429" alt="" />
+</span>
+<a href="generic.html">
+<h2>Upload</h2>
+<div class="content">
+<p>เพิ่มรูปภาพ</p>
+</div>
+</a>
+</article>
+<article>
+<span class="image">
+<img src="http://vignette2.wikia.nocookie.net/enanimanga/images/6/6c/Soul_Eater.png/revision/latest?cb=20110928182429" alt="" />
+</span>
+<a href="generic.html">
+<h2>Upload</h2>
+<div class="content">
+<p>เพิ่มรูปภาพ</p>
+</div>
+</a>
+</article>
+
+</section>
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
@@ -64,15 +251,22 @@
 									</a>
 								</article>
 								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Lorem</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
+  <div class="feed">
+    <div class="feed-header">
+      <a class="feed-author-img"><img src="https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/13248883_502754173266869_1416838301_a.jpg"/></a>
+      <a class="feed-author-name" href="http://blog.stackpie.com">Seun</a>
+      <a class="feed-time">2h</a>
+    </div>
+    <div class="feed-image">
+      <img src="http://vignette2.wikia.nocookie.net/enanimanga/images/6/6c/Soul_Eater.png/revision/latest?cb=20110928182429" />
+    </div>
+    <div class="feed-body">More creepy texts...</div>
+    <div class="feed-footer">
+      <i class="fa fa-heart-o nx"></i>
+      <input type="text" class="ny" placeholder="Add a comment..."/>
+      <i class="fa fa-sort-down nz"></i>
+    </div>
+  </div>
 								</article>
 								<article class="style3">
 									<span class="image">
