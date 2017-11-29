@@ -8,7 +8,7 @@
 */
 /* Wrapper */
 
-	#wrapper {
+	#wrapper, .wrapper {
 		> * {
 			> .inner {
 				$gutter: _size(gutter);

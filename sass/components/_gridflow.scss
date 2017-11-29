@@ -3,12 +3,12 @@
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
-/*
-	Modified by HYERI0609 (https://github.com/hyeri0609)
-*/
+///	Modified by HYERI0609 (https://github.com/hyeri0609)
+///
 
 .gridflow {
 	$gutter: _size(gridflow-gutter);
+	$font-weight-regular: _font(weight-regular);
 	$duration: 0.5s;
 	$ease: 'ease';
 
@@ -20,6 +20,7 @@
 	article {
 		position: relative;
 		width: calc(#{(100% / 3)} - #{$gutter * 1});
+		height: 350px;
 		margin: $gutter 0 0 $gutter;
 		
 		border-radius: 3px;
@@ -43,12 +44,13 @@
 			}
 		}
 		.name {
-			font-size:1em;
-			padding:.5em .5em 0 .5em;
+			font-size: 1em;
+			padding: .5em .5em 0 .5em;
 		}
 		.info {
 			padding: 0 1.5em;
 			font-size: .9em;
+			font-weight: $font-weight-regular;
 		}
 	}
 /*

@@ -21,7 +21,6 @@
 			font-size: 12pt;
 		}
 	}
-
 	a {
 		@include vendor('transition', (
 			'border-bottom-color #{_duration(transition)} ease',
