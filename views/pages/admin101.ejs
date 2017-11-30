@@ -37,7 +37,7 @@
 	<nav id="menu">
 	<h2>admin101</h2>
 	<ul>
-		<li><a href="index.html">Home</a></li>
+		<li><a href="javascript:void(0);" role="button" id="add_member">เพิ่มชื่อ</a></li>
 		<li><a href="generic.html">Ipsum veroeros</a></li>
 		<li><a href="generic.html">Tempus etiam</a></li>
 		<li><a href="generic.html">Consequat dolor</a></li>
@@ -271,6 +271,11 @@ $('.nz').click(function(){
 			<script src="js/util.js"></script>
 			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 			<script src="js/main.js"></script>
+<script>
+	document.getElementById("add_member").addEventListener("click", function() {
+		alert('aa');
+	}); 
 
+</script>
 	</body>
 </html>
