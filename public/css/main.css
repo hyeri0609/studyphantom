@@ -1876,7 +1876,7 @@ button,
   color: #ffffff;
   cursor: default;
   visibility: hidden;
-  z-index: 10002; }
+  z-index: 10012; }
   #menu > .inner {
     -moz-transition: opacity 0.45s ease;
     -webkit-transition: opacity 0.45s ease;
@@ -2005,30 +2005,116 @@ body.is-menu-visible #menu {
   z-index: 10000;
   cursor: default;
   border-bottom: solid 0.1em #e0e0e0; }
-  #headbar #navleft ul {
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-left: 0; }
-  #headbar #navleft li {
-    display: inline-block;
-    line-height: 2.5em;
-    padding-left: 0; }
-  #headbar #navleft a {
-    position: relative;
-    display: block;
+  #headbar .logo {
+    border-bottom: 0;
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    margin: 0.2em;
     text-decoration: none;
-    outline: 0;
-    border-bottom: none;
-    margin-bottom: none; }
-    #headbar #navleft a.active:before {
-      content: '';
+    text-transform: uppercase;
+    display: inline-block; }
+    #headbar .logo > * {
+      display: inline-block;
+      vertical-align: middle; }
+    #headbar .logo .symbol {
+      margin-right: 0.65em; }
+      #headbar .logo .symbol img {
+        display: block;
+        width: 2em;
+        height: 2em; }
+  #headbar #navtop {
+    margin: -2.5em 0 0 15em; }
+    #headbar #navtop ul {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding-left: 0; }
+    #headbar #navtop li {
+      display: inline-block;
+      line-height: 2.5em;
+      padding-left: 0;
+      padding-right: 2em; }
+    #headbar #navtop a {
+      position: relative;
       display: block;
-      position: absolute;
-      left: 50%;
-      margin-left: -0.75em;
-      border-left: solid 0.75em transparent;
-      border-right: solid 0.75em transparent;
-      border-top: solid 0.6em #282828; }
+      text-decoration: none;
+      outline: 0;
+      border-bottom: none;
+      margin-bottom: none; }
+  #headbar #menuicon {
+    position: fixed;
+    right: 2em;
+    top: .2em;
+    z-index: 10000; }
+    #headbar #menuicon ul {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      #headbar #menuicon ul li {
+        display: block;
+        padding: 0; }
+        #headbar #menuicon ul li a {
+          display: block;
+          position: relative;
+          height: 2em;
+          line-height: 2em;
+          padding: 0 1.5em;
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 4px;
+          border: 0;
+          font-size: 0.8em;
+          font-weight: 700;
+          letter-spacing: 0.35em;
+          text-transform: uppercase; }
+        #headbar #menuicon ul li a[href="#menu"] {
+          -webkit-tap-highlight-color: transparent;
+          width: 4em;
+          text-indent: 4em;
+          font-size: 1em;
+          overflow: hidden;
+          padding: 0;
+          white-space: nowrap; }
+          #headbar #menuicon ul li a[href="#menu"]:before, #headbar #menuicon ul li a[href="#menu"]:after {
+            -moz-transition: opacity 0.2s ease;
+            -webkit-transition: opacity 0.2s ease;
+            -ms-transition: opacity 0.2s ease;
+            transition: opacity 0.2s ease;
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 2em 2em; }
+          #headbar #menuicon ul li a[href="#menu"]:before {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+            opacity: 0; }
+          #headbar #menuicon ul li a[href="#menu"]:after {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+            opacity: 1; }
+          #headbar #menuicon ul li a[href="#menu"]:hover:before {
+            opacity: 1; }
+          #headbar #menuicon ul li a[href="#menu"]:hover:after {
+            opacity: 0; }
+  @media screen and (max-width: 736px) {
+    #headbar {
+      padding: 4em 0 0.1em 0 ; }
+      #headbar #menuicon {
+        right: 0.5em;
+        top: 0.9em; }
+        #headbar #menuicon ul li a[href="#menu"]:before, #headbar #menuicon ul li a[href="#menu"]:after {
+          background-size: 1.5em 1.5em; } }
 
 /*
 	Modified by HYERI0609 (https://github.com/hyeri0609)
