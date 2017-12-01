@@ -94,6 +94,7 @@ app.get('/', function(request, response) {
 
 app.get('/uploadpic', (request, response) => response.render('pages/uploadpic'));
 app.get('/admin101', (request, response) => response.render('pages/admin101'));
+app.get('/profile', (request, response) => response.render('pages/profile'));
 app.get('/paragraph', (request, response) => response.render('pages/paragraph'));
 app.get('/baseline', (request, response) => response.render('pages/baseline'));
 app.get('/prologue', (request, response) => response.render('pages/prologue'));

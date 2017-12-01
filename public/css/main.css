@@ -1535,6 +1535,35 @@ input[type="radio"] + label:before {
       .image.main {
         margin: 0 0 2em 0; } }
 
+#profiletop {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red; }
+  #profiletop img {
+    display: block;
+    margin: auto; }
+
+#profileimg {
+  margin-top: -100px;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white; }
+  #profileimg img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px; }
+
 /* Table */
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
