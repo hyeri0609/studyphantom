@@ -1535,35 +1535,6 @@ input[type="radio"] + label:before {
       .image.main {
         margin: 0 0 2em 0; } }
 
-#profiletop {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red; }
-  #profiletop img {
-    display: block;
-    margin: auto; }
-
-#profileimg {
-  margin-top: -100px;
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 3px;
-  border-color: white; }
-  #profileimg img {
-    width: auto;
-    height: 100%;
-    margin-left: -50px; }
-
 /* Table */
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
@@ -2033,7 +2004,7 @@ body.is-menu-visible #menu {
   height: 2.5em;
   z-index: 10000;
   cursor: default;
-  border-bottom: solid 0.1em #e0e0e0; }
+  border-bottom: solid 1px #e0e0e0; }
   #headbar .logo {
     border-bottom: 0;
     color: inherit;
@@ -2248,9 +2219,6 @@ body.is-menu-visible #menu {
         #footer > .inner .copyright li:first-child {
           margin-top: 0; } }
 
-/*
-	Modified by HYERI0609 (https://github.com/hyeri0609)
-*/
 /* Wrapper */
 #wrapper > * > .inner, .wrapper > * > .inner {
   width: 100%;
@@ -2260,3 +2228,60 @@ body.is-menu-visible #menu {
   @media screen and (max-width: 736px) {
     #wrapper > * > .inner, .wrapper > * > .inner {
       padding: 0 1.25em; } }
+
+#ccpTopImg {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  background: #C50022; }
+  #ccpTopImg img {
+    display: block;
+    margin: auto; }
+
+#ccpImg {
+  margin-top: -100px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 90px/30px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #f6f6f6;
+  box-shadow: inset 0 3px 0 #f6f6f6; }
+  #ccpImg img {
+    width: auto;
+    height: 100%;
+    margin-left: 0px; }
+
+#ccpInfo {
+  margin-left: 230px;
+  margin-top: -140px;
+  color: black;
+  display: block;
+  color: #585858; }
+  #ccpInfo #ccpName {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600; }
+  #ccpInfo #ccpDesc {
+    display: block; }
+  #ccpInfo #ccpBadges {
+    display: block; }
+
+#ccpContact {
+  margin-left: 0px;
+  color: black;
+  display: block;
+  color: #585858; }
+  #ccpContact #ccpName {
+    display: block; }
+  #ccpContact #ccpBadges {
+    display: block; }
+
+.fb-color {
+  color: #3B5998; }

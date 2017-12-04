@@ -12,8 +12,9 @@
 <body>
 <div id="wrapper">
 <% include ../partials/headbar %>
-<div id="profiletop" style="border-style:solid;border-width:1px;border-color:red">
-  <img src="https://s3-ap-northeast-1.amazonaws.com/priewmaxim/2cb679b09a3d698f3e5e421520a5d322.jpg" alt="" />
+
+<div id="ccpTopImg" style="margin-top:2.5em;height:300px;background-image:url(https://s3-ap-northeast-1.amazonaws.com/priewmaxim/2cb679b09a3d698f3e5e421520a5d322.jpg)">
+  <!--<img src="https://s3-ap-northeast-1.amazonaws.com/priewmaxim/2cb679b09a3d698f3e5e421520a5d322.jpg" alt="" />-->
 </div>
 <div id="main">
 <br/>
@@ -21,15 +22,87 @@
 
 
 <div class="inner">
-<div id="profileimg">
-  <img src="https://s3-ap-northeast-1.amazonaws.com/priewmaxim/2cb679b09a3d698f3e5e421520a5d322.jpg" alt="" />
+<div class="row">
+  <div class="12u$">
+    <div id="ccpImg">
+      <img src="images/storefront-6C6C6C.jpg" alt="store" />
+    </div>
+    <div id="ccpInfo">
+      <div id="ccpName">ร้านอุดมการกระจก รับติดตั้ง กระจก อลูมิเนียม เชียงใหม่-ลำพูน</div>
+    
+      <div id="ccpBadges">👏 👩‍🔧 👨‍🔧 🦅 🦀 🦑 🐙 </div>
+      <div id="ccpBadges">🐝🐞🐜🦐🐳🐋🎄🍄💐🌏🔥</div>
+    </div>
+    
+  </div>
 </div>
-<header>
-	<h1>ท <a href="http://html5up.net">HTML5 UP</a>.</h1>
-	<p>ช่างก่อสร้าง รับเหมา ต่อเติม ซ่อมแซม</p>
-</header>
+<br/>
+<div class="row" style="margin-top:20px;">
+	<div class="4u">
+	  <div id="ccpContact">
+      <div id="ccpAsterisk"><i class="fa fa-asterisk fb-color" aria-hidden="true" style="width:1.3em;text-align:center;"></i><p style="margin:-1.8em 0 0 1.7em">ข้อมูลจาก facebook</p>️</div>
+      <div id="ccpAsterisk2" style="margin-top:-1.6em;"><i class="fa fa-facebook fb-color" aria-hidden="true" style="width:1.3em;text-align:center;"></i><a href="https://www.facebook.com/audomaluminium" target="_blank" class="fb-color" style="margin:-1.8em 0 0 0.4em">audomaluminium</a>️</div>
+      
+      <div id="ccpTel" style="margin-top:.3em;"><i class="fa fa-phone" aria-hidden="true" style="width:1.3em;text-align:center;"></i><p style="margin:-1.8em 0 0 1.7em">081 594 1251</p></div>
+      <div id="ccpAddress" style="margin-top:.3em;"><i class="fa fa-address-card-o" aria-hidden="true"></i><p style="margin:-1.8em 0 0 1.7em">213 หมู่ 3 ต.มะเขือแจ้ อ.เมือง เทศบาลเมืองลำพูน 51000</p></div>
+      <!--<div id="ccpBadges" style="margin:0 0 0 1.7em">️</div>-->
+    
+    </div>
+  </div>
+	<div class="8u">
+	  <div class="row">
+	    <div class="12u">
+	  <!--<div id="ccpDesc">บริการต่อเติมบ้าน ใน เทศบาลเมืองลำพูน</div>-->
+      <div class="box">
+      <p>บริการต่อเติมบ้าน ใน เทศบาลเมืองลำพูน</p>    
+      </div>
+    </div>
+    <div class="row">
+    	<div class="12u">
+        <p>สินค้าและบริการ</p>
+    	</div>
+    </div>
+    
+    
+<div class="row">
+<div class="6u">
+  <article>
+  <span class="image">
+  <img src="images/cloud-upload-512.png" alt="" />
+  </span>
+  <div class="name">เพิ่มข้อมูลช่าง</div>
+  <div class="info">
+  กดเพิ่มข้อมูลช่าง
+  </div>
+  </article>
+</div>
+</div>
+    
+    
+    
+	</div>
+</div>
 
 
+
+	<div class="4u">
+<article>
+<span class="image">
+<img src="images/cloud-upload-512.png" alt="" />
+</span>
+<div class="name">เพิ่มข้อมูลช่าง</div>
+<div class="info">
+กดเพิ่มข้อมูลช่าง
+</div>
+</article>
+	  
+	</div>
+</div>
+<!--<header>-->
+<!--	<p>สินค้าและบริการ</p>-->
+<!--</header>-->
+<br/>
+<p style="margin:0 0 0.5em 0">สินค้าและบริการ</p>
 <section class="gridflow">
 
 
@@ -231,7 +304,9 @@ $('.nz').click(function(){
 					</footer>
 
 </div>
-
+<div id="ed">
+  
+</div>
 <% include ../partials/scripts %>
 <% include ../partials/admin/scripts %>
 </body>

@@ -1,0 +1,82 @@
+///
+///	By HYERI0609 (https://github.com/hyeri0609)
+///
+//cc profile
+#ccpTopImg { //display 100% and center image
+	// width: 100%;
+	// height: 400px;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	border-style:solid;
+	border-width:1px;
+	background: _palette(cc-red);
+	//background: _palette(fg);
+	img {
+		display: block;
+		margin: auto;	
+	}
+}
+
+#ccpImg {
+	margin-top: -100px;
+	//display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	//border-radius: 50%;
+	border-radius: 90px/30px; //horizontal radius/vertical radius
+	
+   //-webkit-transform: translateZ(0);
+   //-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    
+    
+	//border-radius: 40%/15%;
+	border-style:solid;
+	border-width:7px;
+	border-color: _palette(bg-alt);
+	box-shadow: inset 0 3px 0 _palette(bg-alt);
+	
+	img {
+		width: auto;
+		height: 100%;
+		margin-left: 0px;
+	}
+}
+#ccpInfo {
+    margin-left: 230px;
+    margin-top: -140px;
+    color: black;
+    display: block;
+    color: _palette(fg);
+	#ccpName {
+		display: block;
+		font-size: 1.1em;
+		font-weight: _font(weight-bold-alt);
+	}
+	#ccpDesc {
+		display: block;
+	}
+	#ccpBadges {
+		display: block;
+	}
+}
+#ccpContact {
+    margin-left: 0px;
+    color: black;
+    display: block;
+    color: _palette(fg);
+	#ccpName {
+		display: block;
+	}
+	#ccpBadges {
+		display: block;
+	}
+}
+
+.fb-color {
+	color: _palette(fb-color);
+}
