@@ -3,7 +3,9 @@
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
-
+///
+///	Modified by HYERI0609 (https://github.com/hyeri0609)
+///
 /* Button */
 
 	input[type="submit"],
@@ -61,16 +63,25 @@
 		&.small {
 			font-size: 0.6em;
 		}
-
+		
 		&.big {
 			font-size: 1em;
 		}
+		&.common {
+			display: block;
+			height: 2em;
+			font-size: 0.8em;
+			line-height: 2em;
+			padding: 0 -1em 0 -1em; 
+			letter-spacing: 0;
 
+		}
 		&.special {
 			box-shadow: none;
-			background-color: _palette(fg);
-			color: _palette(bg) !important;
-
+			// background-color: _palette(fg);
+			// color: _palette(bg) !important;
+			background-color: _palette(accent2);
+			color: _palette(fg-accent) !important;
 			&:hover {
 				background-color: _palette(accent1);
 			}
