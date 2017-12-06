@@ -1050,6 +1050,7 @@ a {
     color: #C50022 !important; }
 
 strong, b {
+  color: #585858;
   font-weight: 700; }
 
 em, i {
@@ -2139,8 +2140,7 @@ body.is-menu-visible #menu {
 
 /* Footer */
 #footer {
-  padding: 5em 0 6em 0 ;
-  background-color: #f6f6f6; }
+  padding: 5em 0 6em 0 ; }
   #footer > .inner {
     display: -moz-flex;
     display: -webkit-flex;
