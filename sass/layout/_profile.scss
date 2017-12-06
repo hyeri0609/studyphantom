@@ -10,9 +10,9 @@
 	width: 100%;
 	height: 400px;
 	overflow: hidden;
-	border-style:solid;
-	border-width:1px;
-	background: _palette(cc-red);
+	//border-style:solid;
+	//border-width:1px;
+	background: _palette(cc-oxblood);
 	//background: _palette(fg);
 	img {
 		display: block;
@@ -24,19 +24,16 @@
 }
 #ccpImg {
 	margin-top: -100px;
-	//display: inline-block;
+	display: inline-block;
 	position: relative;
-	width: 220px;
-	height: 220px;
-	background-color:red;
-		border-radius: 100%;
-		border: 0;
-		display: inline-block;
-		
-		
-	//overflow: hidden;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border: 0;
 	//border-radius: 50%;
 	//border-radius: 90px/30px; //horizontal radius/vertical radius
+	border-radius: 90px/30px;
+	//border-radius: 100%;
 	
    //-webkit-transform: translateZ(0);
    //-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
@@ -49,26 +46,25 @@
 	//box-shadow: inset 0 3px 0 _palette(bg-alt);
 	
 	img {
+		display: block;
 		width: auto;
 		//height: 100%;
-		margin-left: 0px;
-			width: 200px;
-	height: 200px;
+		height: 200px;
 	// 	border-radius: 50%;
 	//border-style:solid;
 	//border-width:7px;
 	//border-color: _palette(bg-alt);
 	// box-shadow: inset 0 3px 0 _palette(bg-alt);
 	
-			display: block;
-			border-radius: 90px/30px;
+
+			//border-radius: 90px/30px;
 //border-radius: 100%;
 //width: 100%;
 	}
 }
-#ccpImg:before {
-	display: none;
-}
+// #ccpImg:before {
+// 	display: none;
+// }
 #ccpInfo {
     margin-left: 230px;
     margin-top: -140px;

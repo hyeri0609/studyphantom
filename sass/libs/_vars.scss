@@ -47,9 +47,8 @@
 	);
 // Palette.
 	$palette: (
-		bg:					#ffffff,
+		bg:					#f6f6f6,
 		bg-accent:			#333333,
-		bg-alt:				#f6f6f6,
 		fg:					#585858,
 		fg-accent:			#ffffff,
 		border:				#c9c9c9,
@@ -61,6 +60,25 @@
 		accent4:			#c75b9b,
 		accent5:			#ae85ca,
 		accent6:			#8499e7,
-		cc-red: 			#C50022,
+		
+		cc-accent:			#FF6259,
+		cc-hover-accent:	#FF6259,
+		
 		fb-color:			#3B5998,
+				
+		cc-oldrose:			#FF6259,
+		cc-red: 			#C50022,
+		
+//https://www.canva.com/learn/website-color-schemes/
+//09. Warm Tones
+		cc-grain:			#D7CEC7,
+		cc-blackboard:		#565656,
+		cc-oxblood:			#76323F,
+		cc-tan:				#76323F,
+		
+		
+		cc-rustyred:		#984B43,
+
+
+
 	);

@@ -1470,7 +1470,7 @@ input[type="radio"] {
   input[type="radio"]:checked + label:before {
     background: #585858;
     border-color: #585858;
-    color: #ffffff;
+    color: #f6f6f6;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
@@ -1589,15 +1589,14 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  background-color: transparent;
+  background-color: #7ecaf6;
+  color: #ffffff !important;
   border-radius: 4px;
   border: 0;
-  box-shadow: inset 0 0 0 2px #585858;
-  color: #585858 !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
-  font-weight: 700;
+  font-weight: 600;
   height: 3.5em;
   letter-spacing: 0.35em;
   line-height: 3.45em;
@@ -1627,8 +1626,9 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    color: #C50022 !important;
-    box-shadow: inset 0 0 0 2px #C50022; }
+    background-color: #FF6259;
+    color: #ffffff !important;
+    box-shadow: none; }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
@@ -1647,11 +1647,11 @@ button,
   button.big,
   .button.big {
     font-size: 1em; }
-  input[type="submit"].common,
-  input[type="reset"].common,
-  input[type="button"].common,
-  button.common,
-  .button.common {
+  input[type="submit"].ccpeditbutton,
+  input[type="reset"].ccpeditbutton,
+  input[type="button"].ccpeditbutton,
+  button.ccpeditbutton,
+  .button.ccpeditbutton {
     display: block;
     height: 2em;
     font-size: 0.8em;
@@ -1884,7 +1884,7 @@ button,
   height: 100%;
   -webkit-overflow-scrolling: touch;
   background: #585858;
-  color: #ffffff;
+  color: #f6f6f6;
   cursor: default;
   visibility: hidden;
   z-index: 10012; }
@@ -1908,7 +1908,7 @@ button,
       padding: 0; }
       #menu > .inner > ul > li {
         padding: 0;
-        border-top: solid 1px rgba(255, 255, 255, 0.15); }
+        border-top: solid 1px rgba(246, 246, 246, 0.15); }
         #menu > .inner > ul > li a {
           display: block;
           padding: 1em 0;
@@ -2078,7 +2078,7 @@ body.is-menu-visible #menu {
           height: 2em;
           line-height: 2em;
           padding: 0 1.5em;
-          background-color: rgba(255, 255, 255, 0.5);
+          background-color: rgba(246, 246, 246, 0.5);
           border-radius: 4px;
           border: 0;
           font-size: 0.8em;
@@ -2246,9 +2246,7 @@ body.is-menu-visible #menu {
   width: 100%;
   height: 400px;
   overflow: hidden;
-  border-style: solid;
-  border-width: 1px;
-  background: #C50022; }
+  background: #76323F; }
   #ccpTopImg img {
     display: block;
     margin: auto; }
@@ -2264,23 +2262,17 @@ body.is-menu-visible #menu {
 
 #ccpImg {
   margin-top: -100px;
+  display: inline-block;
   position: relative;
-  width: 220px;
-  height: 220px;
-  background-color: red;
-  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
   border: 0;
-  display: inline-block; }
+  border-radius: 90px/30px; }
   #ccpImg img {
-    width: auto;
-    margin-left: 0px;
-    width: 200px;
-    height: 200px;
     display: block;
-    border-radius: 90px/30px; }
-
-#ccpImg:before {
-  display: none; }
+    width: auto;
+    height: 200px; }
 
 #ccpInfo {
   margin-left: 230px;
