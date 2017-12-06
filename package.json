@@ -9,8 +9,7 @@
   "scripts": {
     "start": "DEBUG=express:* node server.js",
     "test": "mocha --recursive test",
-    
-    "startw": "set DEBUG=express:*&&node server.js",
+
     "start-prod": "NODE_ENV=production node server.js",
     "trace-sync": "DEBUG=express:* node --trace-sync-io server.js",
     "with-pg": "DEBUG=express:* DATABASE_URL=postgres://ubuntu@localhost:5432/oauth2 node server.js",
@@ -18,7 +17,9 @@
     "pg": "sudo service postgresql start",
     "sass": "node-sass sass -o public/css",
     "sass-watch": "node-sass --watch sass -o public/css",
-    "build": "npm run build-sass && npm test"
+    "build": "npm run build-sass && npm test",
+
+    "startw": "set DEBUG=express:*&&node server.js"
   },
   "repository": {
     "type": "git",
