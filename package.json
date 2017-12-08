@@ -9,7 +9,6 @@
   "scripts": {
     "start": "DEBUG=express:* node server.js",
     "test": "mocha --recursive test",
-
     "start-prod": "NODE_ENV=production node server.js",
     "trace-sync": "DEBUG=express:* node --trace-sync-io server.js",
     "with-pg": "DEBUG=express:* DATABASE_URL=postgres://ubuntu@localhost:5432/oauth2 node server.js",
@@ -18,7 +17,6 @@
     "sass": "node-sass sass -o public/css",
     "sass-watch": "node-sass --watch sass -o public/css",
     "build": "npm run build-sass && npm test",
-
     "startw": "set DEBUG=express:*&&node server.js"
   },
   "repository": {
@@ -41,6 +39,8 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "pg-promise": "^7.3.2",
+    "react": "^16.2.0",
+    "redux": "^3.7.2",
     "serve-favicon": "^2.4.5"
   },
   "devDependencies": {
